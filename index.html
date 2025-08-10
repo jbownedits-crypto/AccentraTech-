@@ -178,7 +178,7 @@ Original Template: https://templatemo.com/tm-593-personal-shape
 </div>
     </section>
 
-    <!-- Contact Section -->
+   <!-- Contact Section -->
 <section id="contact" class="contact">
     <div class="contact-floating-shapes">
         <div class="contact-shape contact-shape-1"></div>
@@ -191,34 +191,128 @@ Original Template: https://templatemo.com/tm-593-personal-shape
     <div class="container">
         <div class="contact-content">
             <h2 class="section-title fade-in">Let's Work Together</h2>
-            <p class="fade-in">Ready to bring your vision to life? Let's discuss how we can create something amazing together. I'm always excited to take on new challenges and collaborate on innovative projects.</p>
+            <p class="fade-in" style="margin-bottom: 40px;">
 
-            <form class="contact-form fade-in">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your full name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+                Ready to bring your vision to life? Let's discuss how we can create something amazing together. 
+                I'm always excited to take on new challenges and collaborate on innovative projects.
+            </p>
+
+       <style>
+/* Modern Form Styling */
+#whatsappForm {
+  max-width: 450px;
+  margin: auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+#whatsappForm div {
+  margin-bottom: 15px;
+}
+
+#whatsappForm label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+#whatsappForm input,
+#whatsappForm textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+#whatsappForm input:focus,
+#whatsappForm textarea:focus {
+  border-color: #25d366;
+  box-shadow: 0 0 6px rgba(37, 211, 102, 0.3);
+}
+
+#whatsappForm textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+#whatsappForm button {
+  background: #25d366;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+#whatsappForm button:hover {
+  background: #1ebe5d;
+}
+</style>
+
+<form id="whatsappForm">
+  <div>
+    <label>Name</label>
+    <input type="text" id="name" required>
+  </div>
+  <div>
+    <label>Email</label>
+    <input type="email" id="email" required>
+  </div>
+  <div>
+    <label>Subject</label>
+    <input type="text" id="subject" required>
+  </div>
+  <div>
+    <label>Message</label>
+    <textarea id="message" required></textarea>
+  </div>
+  <button type="button" id="sendBtn">Send Message</button>
+</form>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const sendBtn = document.getElementById('sendBtn');
+
+  sendBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !subject || !message) {
+      alert('Please fill in all fields.');
+      return;
+    }
+
+    const phone = '919361959708';
+    const whatsappMessage = `Hello, my name is ${name}.
+Email: ${email}
+Subject: ${subject}
+Message: ${message}`;
+
+    const url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(whatsappMessage);
+    window.open(url, '_blank');
+  });
+});
+</script>
+
 
             <!-- ✅ Contact Info Block -->
             <div class="contact-info fade-in" style="margin-top: 2rem;">
-                <p><strong>Email:</strong> <a href="mailto:accentratech@gmail.com">accentratech@gmail.com</a></p>
-                <p><strong>WhatsApp:</strong> <a href="https://wa.me/919876543210" target="_blank">+91 98765 43210</a></p>
+                <p><strong>Email:</strong> <a href="mailto:villagevinyani000005@gmail.com">accentratech@gmail.com</a></p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/919361959708" target="_blank">+91 9361959708</a></p>
                 <p><strong>Location:</strong> Mecheri, Salem, Tamil Nadu</p>
             </div>
         </div>
