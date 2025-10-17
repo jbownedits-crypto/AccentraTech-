@@ -774,9 +774,7 @@ https://templatemo.com/tm-593-personal-shape
             background-position: center;
         }
 
-        .portfolio-item:nth-child(1) .portfolio-image {
-            background-image: url('images/ecommerce.jpg');
-        }
+       
 
         .portfolio-item:nth-child(2) .portfolio-image {
             background-image: url('images/computer-desk-stickers.jpg');
@@ -1205,4 +1203,5 @@ https://templatemo.com/tm-593-personal-shape
             .container {
                 padding: 0 1rem;
             }
+
         }
