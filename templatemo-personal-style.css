@@ -776,23 +776,23 @@ https://templatemo.com/tm-593-personal-shape
 
        
 
-        .portfolio-item:nth-child(2) .portfolio-image {
+        .portfolio-item:nth-child(1) .portfolio-image {
             background-image: url('images/computer-desk-stickers.jpg');
         }
 
-        .portfolio-item:nth-child(3) .portfolio-image {
+        .portfolio-item:nth-child(2) .portfolio-image {
             background-image: url('images/curved-display-pinky-girl.jpg');
         }
 
-        .portfolio-item:nth-child(4) .portfolio-image {
+        .portfolio-item:nth-child(3) .portfolio-image {
             background-image: url('images/dashboard-interfaces-transparent-displays.jpg');
         }
 
-        .portfolio-item:nth-child(5) .portfolio-image {
+        .portfolio-item:nth-child(4) .portfolio-image {
             background-image: url('images/marketing-strategy-women.jpg');
         }
 
-        .portfolio-item:nth-child(6) .portfolio-image {
+        .portfolio-item:nth-child(5) .portfolio-image {
             background-image: url('images/portfolio-website-girl.jpg');
         }
 
@@ -1203,5 +1203,4 @@ https://templatemo.com/tm-593-personal-shape
             .container {
                 padding: 0 1rem;
             }
-
         }
